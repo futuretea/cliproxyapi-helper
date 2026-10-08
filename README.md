@@ -46,7 +46,7 @@ ssh root@203.0.113.10 \
 
 This command will:
 
-1. Download the pinned default version `v7.2.131` and verify the release package against the official `checksums.txt`.
+1. Download the pinned default version `v8.0.20` and verify the release package against the official `checksums.txt`.
 2. Create a restricted system user `cliproxy`.
 3. Request a short-lived Let's Encrypt certificate containing the target IPv4 SAN.
 4. Start the API and remote management page on port 443 of the target IPv4.
@@ -97,7 +97,7 @@ curl --fail \
 | `--management-port <port>` | `443` | Shared HTTPS port for the API and management page; any value `1..65535` except Certbot-reserved `80` |
 | `--enable-remote-management` | off for new installs | Expose the management page and remote management API |
 | `--disable-remote-management` | — | Disable the management page and remote management API |
-| `--cliproxy-version <tag\|latest>` | `v7.2.131` | Install a pinned release tag, or resolve the latest GitHub release |
+| `--cliproxy-version <tag\|latest>` | `v8.0.20` | Install a pinned release tag, or resolve the latest GitHub release |
 | `--acme-email <email>` | none | Register an email address with the Let's Encrypt account |
 | `-h`, `--help` | — | Show help |
 

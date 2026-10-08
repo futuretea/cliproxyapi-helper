@@ -46,7 +46,7 @@ ssh root@203.0.113.10 \
 
 该命令会：
 
-1. 下载默认固定版本 `v7.2.131`，并用官方 `checksums.txt` 校验发布包。
+1. 下载默认固定版本 `v8.0.20`，并用官方 `checksums.txt` 校验发布包。
 2. 创建受限系统用户 `cliproxy`。
 3. 申请包含目标 IPv4 SAN 的短期 Let's Encrypt 证书。
 4. 在目标 IPv4 的 443 端口启动 API 和远程管理页面。
@@ -97,7 +97,7 @@ curl --fail \
 | `--management-port <port>` | `443` | API 与管理页面共用的 HTTPS 端口，可选 `1..65535`，但不能使用 Certbot 保留的 `80` |
 | `--enable-remote-management` | 新装时关闭 | 开启管理页面和远程管理 API |
 | `--disable-remote-management` | — | 关闭管理页面和远程管理 API |
-| `--cliproxy-version <tag\|latest>` | `v7.2.131` | 安装固定 release tag，或解析 GitHub 最新 release |
+| `--cliproxy-version <tag\|latest>` | `v8.0.20` | 安装固定 release tag，或解析 GitHub 最新 release |
 | `--acme-email <email>` | 无 | 为 Let's Encrypt 账户登记邮箱 |
 | `-h`, `--help` | — | 显示帮助 |
 

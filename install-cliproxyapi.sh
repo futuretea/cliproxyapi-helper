@@ -16,7 +16,7 @@ readonly hook_path="/etc/letsencrypt/renewal-hooks/deploy/50-cliproxyapi"
 
 public_ip=""
 listen_port=443
-requested_version="${CLIPROXY_VERSION:-v7.2.131}"
+requested_version="${CLIPROXY_VERSION:-v8.0.20}"
 acme_email="${ACME_EMAIL:-}"
 management_mode="preserve"
 management_enabled=false
@@ -47,7 +47,7 @@ usage() {
     '  --management-port <port>       Shared HTTPS port for the management UI and API (default: 443)' \
     '  --enable-remote-management     Expose /management.html and the authenticated management API' \
     '  --disable-remote-management    Disable the management UI and management API' \
-    '  --cliproxy-version <tag|latest> CLIProxyAPI release (default: v7.2.131)' \
+    '  --cliproxy-version <tag|latest> CLIProxyAPI release (default: v8.0.20)' \
     "  --acme-email <email>            Register the Let's Encrypt account with an email address" \
     '  --ip <public-ipv4>              Public IPv4 address assigned to the host' \
     '  -h, --help                      Show this help' '' \
